@@ -11,19 +11,17 @@ namespace Ejercicio_1
         static void Main(string[] args)
         {
             Console.WriteLine("***Calculadora Rudimentaria***");// WriteLine escribe la linea y hace un ENTER (baja una linea)
+
             Console.Write("Ingrese el primer número a sumar: "); // Write escribe la linea y NO hace enter (se mantiene en la misma linea)
             string primerIngreso = Console.ReadLine();
 
             Console.Write("Ingrese el segundo número a sumar: ");
             string segundoIngreso = Console.ReadLine();
 
-            int primerValor = int.Parse(primerIngreso); // Casteo la variable string ingresada por consola
-            int segundoValor = int.Parse(segundoIngreso);
-
-            Console.WriteLine("El resultado es: ");
-            int resultado = primerValor + segundoValor;
+            int resultado = Calculadora.Sumar(primerIngreso, segundoIngreso);
 
             Console.WriteLine(resultado);
+            Console.WriteLine("Presione una tecla para terminar");
             Console.ReadKey(); // Se detiene en este punto gasta que se presione cualquier tecla
         }
     }
