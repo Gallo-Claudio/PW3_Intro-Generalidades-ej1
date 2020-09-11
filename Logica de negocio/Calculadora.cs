@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_1
+namespace Logica_de_negocio
 {
-    class Calculadora
+    public class Calculadora
     {
         public static int Sumar(string ingreso1, string ingreso2)
         {
