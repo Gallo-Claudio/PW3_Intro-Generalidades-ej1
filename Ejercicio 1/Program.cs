@@ -29,6 +29,14 @@ namespace Ejercicio_1
             int resultado = Calculadora.Sumar(primerIngreso, segundoIngreso);
 
             Console.WriteLine(resultado);
+
+
+            Console.Write("Ingrese texto a convertir a mayusculas: ");
+            string texto1=null;
+            ManipuladorString.ConvertirMayusculas(texto1);
+
+            
+
             Console.WriteLine("Presione una tecla para terminar");
             Console.ReadKey(); // Se detiene en este punto gasta que se presione cualquier tecla
         }
